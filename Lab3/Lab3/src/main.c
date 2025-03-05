@@ -26,13 +26,17 @@
 #include "lwip/sockets.h"
 #include "lwip/netdb.h"
 
+#include "../include/version.h"
+
 #define CONFIG_ESP_WIFI_SSID      "lab-iot"
 #define CONFIG_ESP_WIFI_PASS      "IoT-IoT-IoT"
 #define CONFIG_ESP_MAXIMUM_RETRY  5
 #define CONFIG_LOCAL_PORT         10001
+ 
 
 //TODO: Modificati adresa IP de mai jos pentru a coincide cu cea a PC-ul pe care rulati scriptul python
-#define CONFIG_EXAMPLE_FIRMWARE_UPGRADE_URL "https://192.168.89.43:5000/firmware.bin" 
+#define CONFIG_EXAMPLE_FIRMWARE_UPGRADE_URL "https://192.168.89.49:5000/firmware.bin"
+#define CURRENT_REMOTE_VERSION_URL "https://192.168.89.49:5000/version" 
 
 #define GPIO_OUTPUT_IO 4
 #define GPIO_OUTPUT_PIN_SEL (1ULL<<GPIO_OUTPUT_IO)
@@ -170,9 +174,18 @@ static void ota_task(void *pvParameters)
 {
     xEventGroupWaitBits(s_event_start_ota, BIT_BTN_PRESSED, pdTRUE, pdTRUE, portMAX_DELAY);
 
-    ESP_LOGI(TAG, "Starting OTA example task");
-    esp_http_client_config_t config = {
-        .url = CONFIG_EXAMPLE_FIRMWARE_UPGRADE_URL,
+    ESP_ERROR_CHECK(esp_tls_init_global_ca_store());
+    ESP_ERROR_CHECK(esp_tls_set_global_ca_store((unsigned char *)server_cert_pem_start, server_cert_pem_end - server_cert_pem_start));
+
+    // call CURRENT_REMOTE_VERSION_URL to get the current version
+    // if the version is the same as the current one, do nothing
+    // if the version is different, start the OTA process
+
+    bool got_version = false;
+
+    // configure call
+    esp_http_client_config_t config_version = {
+        .url = CURRENT_REMOTE_VERSION_URL,
         .cert_pem = (char *)server_cert_pem_start,
         .cert_len = 1422,
         .event_handler = _http_event_handler,
@@ -180,21 +193,59 @@ static void ota_task(void *pvParameters)
         .use_global_ca_store = true,
         .skip_cert_common_name_check = true
     };
-
-    esp_https_ota_config_t ota_config = {
-        .http_config = &config,
-    };
     
-    ESP_ERROR_CHECK(esp_tls_init_global_ca_store());
-    ESP_ERROR_CHECK(esp_tls_set_global_ca_store((unsigned char*)server_cert_pem_start, server_cert_pem_end - server_cert_pem_start));
 
-    ESP_LOGI(TAG, "Attempting to download update from %s", config.url);
-    esp_err_t ret = esp_https_ota(&ota_config);
-    if (ret == ESP_OK) {
-        ESP_LOGI(TAG, "OTA Succeed, Rebooting...");
-        esp_restart();
-    } else {
-        ESP_LOGE(TAG, "Firmware upgrade failed");
+    esp_http_client_handle_t client = esp_http_client_init(&config_version);
+    esp_err_t err = esp_http_client_perform(client);
+
+    char *buffer = NULL;
+    // check if the call was successful
+    if (err != ESP_OK) {
+        ESP_LOGE(TAG, "HTTP GET request failed: %s", esp_err_to_name(err));
+        esp_http_client_cleanup(client);
+    }else{
+        // get the response
+        int content_length = esp_http_client_fetch_headers(client);
+        buffer = malloc(content_length + 1);
+        esp_http_client_read(client, buffer, content_length);
+        buffer[content_length] = '\0';
+
+        ESP_LOGI(TAG, "Current remote version: %s", buffer);
+
+        // check if the version is the same as the current one
+        if (strcmp(buffer, VERSION_SHORT) == 0) {
+            ESP_LOGI(TAG, "Current version is the same as the remote one");
+            esp_http_client_cleanup(client);
+        }
+    }
+
+    // start the OTA process
+    if(got_version && strcmp(buffer, VERSION_SHORT) != 0){
+
+        ESP_LOGI(TAG, "Starting OTA example task");
+        esp_http_client_config_t config = {
+            .url = CONFIG_EXAMPLE_FIRMWARE_UPGRADE_URL,
+            .cert_pem = (char *)server_cert_pem_start,
+            .cert_len = 1422,
+            .event_handler = _http_event_handler,
+            .keep_alive_enable = true,
+            .use_global_ca_store = true,
+            .skip_cert_common_name_check = true
+        };
+
+        esp_https_ota_config_t ota_config = {
+            .http_config = &config,
+        };
+        
+        ESP_LOGI(TAG, "Attempting to download update from %s", config.url);
+        esp_err_t ret = esp_https_ota(&ota_config);
+        if (ret == ESP_OK) {
+            ESP_LOGI(TAG, "OTA Succeed, Rebooting...");
+            esp_restart();
+        } else {
+            ESP_LOGE(TAG, "Firmware upgrade failed");
+        }
+        
     }
     while (1) {
         vTaskDelay(1000 / portTICK_PERIOD_MS);
