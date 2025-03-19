@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "esp_wifi.h": "c",
+        "event_groups.h": "c"
+    }
+}
