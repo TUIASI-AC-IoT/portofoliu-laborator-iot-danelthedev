@@ -17,6 +17,13 @@
 #include "freertos/event_groups.h"
 #include "esp_http_server.h"
 
+#include "freertos/event_groups.h"
+
+#include "lwip/err.h"
+#include "lwip/sys.h"
+
+#include "lwip/sockets.h"
+#include "lwip/netdb.h"
 
 #include "lwip/err.h"
 #include "lwip/sys.h"
@@ -25,6 +32,10 @@
 #include "http-server.h"
 
 #include "../mdns/include/mdns.h"
+
+#define CONFIG_LOCAL_PORT 80
+
+static const char *TAG = "Server";
 
 void app_main(void)
 {
@@ -37,11 +48,18 @@ void app_main(void)
     ESP_ERROR_CHECK(ret);
     ESP_ERROR_CHECK(esp_event_loop_create_default());
 
-    // TODO: 3. SSID scanning in STA mode 
+    // TODO: 3. SSID scanning in STA mode
 
     // TODO: 1. Start the softAP mode
+    wifi_init_softap();
 
-     // TODO: 4. mDNS init (if there is time left)   
+     // TODO: 4. mDNS init (if there is time left)
+    mdns_init();
+    mdns_hostname_set("esp32-imbrea");
+    mdns_instance_name_set("ESP32 Imbrea");
 
-    // TODO: 2. Start the web server 
+    // TODO: 2. Start the web server
+    start_webserver();
+
+
 }
