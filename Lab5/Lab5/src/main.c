@@ -35,7 +35,52 @@
 
 #define CONFIG_LOCAL_PORT 80
 
-static const char *TAG = "Server";
+#define WIFI_SCAN_TAG "WIFI_SCAN"
+
+extern wifi_ap_record_t* ap_records;
+extern uint16_t ap_count;
+
+wifi_ap_record_t* wifi_scan_ssid(void)
+{
+    // Initialize Wi-Fi in STA mode
+    wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
+    ESP_ERROR_CHECK(esp_wifi_init(&cfg));
+    ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
+    ESP_ERROR_CHECK(esp_wifi_start());
+
+    // Configure scan parameters
+    wifi_scan_config_t scan_config = {
+        .ssid = NULL,
+        .bssid = NULL,
+        .channel = 0,
+        .show_hidden = true
+    };
+
+    // Start scanning
+    ESP_ERROR_CHECK(esp_wifi_scan_start(&scan_config, true));
+
+    // Get the scan results
+    ap_count = 0;
+    ESP_ERROR_CHECK(esp_wifi_scan_get_ap_num(&ap_count));
+    ap_records = malloc(ap_count * sizeof(wifi_ap_record_t));
+    if (ap_records == NULL) {
+        ESP_LOGE(WIFI_SCAN_TAG, "Failed to allocate memory for AP records");
+        return NULL;
+    }
+    ESP_ERROR_CHECK(esp_wifi_scan_get_ap_records(&ap_count, ap_records));
+
+    // Log the scan results
+    ESP_LOGI(WIFI_SCAN_TAG, "Found %d access points:", ap_count);
+    for (int i = 0; i < ap_count; i++) {
+        ESP_LOGI(WIFI_SCAN_TAG, "SSID: %s, RSSI: %d", ap_records[i].ssid, ap_records[i].rssi);
+    }
+
+    return ap_records; // Caller must free this memory
+    ESP_ERROR_CHECK(esp_wifi_stop());
+
+    // return a list of the SSIDs
+    return ap_records;
+}
 
 void app_main(void)
 {
@@ -47,8 +92,17 @@ void app_main(void)
     }
     ESP_ERROR_CHECK(ret);
     ESP_ERROR_CHECK(esp_event_loop_create_default());
-
-    // TODO: 3. SSID scanning in STA mode
+    uint16_t ap_count = 0; // Declare and initialize ap_count
+    wifi_ap_record_t* ssids = wifi_scan_ssid();
+    if (ssids == NULL) {
+        ESP_LOGE(WIFI_SCAN_TAG, "Failed to scan Wi-Fi networks");
+        return;
+    }
+    ESP_ERROR_CHECK(esp_wifi_scan_get_ap_num(&ap_count)); // Get the number of APs
+    for (int i = 0; i < ap_count; i++) {
+        ESP_LOGI(WIFI_SCAN_TAG, "SSID: %s, RSSI: %d", ssids[i].ssid, ssids[i].rssi);
+    }
+    free(ssids); // Free the allocated memory
 
     // TODO: 1. Start the softAP mode
     wifi_init_softap();

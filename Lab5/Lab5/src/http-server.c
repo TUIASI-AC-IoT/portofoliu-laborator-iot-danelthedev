@@ -16,13 +16,18 @@
 
 #include "esp_log.h"
 
-const char indexPage[] = "<html><body><form action=\"/results.html\" target=\"_blank\" method=\"post\"><label for=\"fname\">Networks found:</label><br><select name=\"ssid\"><option value=\"ssid-exemplu-1\">ssid-exemplu-1</option><option value=\"ssid-exemplu-2\">ssid-exemplu-2</option><option value=\"ssid-exemplu-3\">ssid-exemplu-3</option><option value=\"ssid-exemplu-4\">ssid-exemplu-4</option></select><br><label for=\"ipass\">Security key:</label><br><input type=\"password\" name=\"ipass\"><br><input type=\"submit\" value=\"Submit\"></form></body></html>";
+wifi_ap_record_t* ap_records;
+uint16_t ap_count;
+
+const char indexPage[] = "<html><body><form action=\"/results.html\" target=\"_blank\" method=\"post\"><label for=\"fname\">Networks found:</label><br><select name=\"ssid\">#OPTIONS#</select><br><label for=\"ipass\">Security key:</label><br><input type=\"password\" name=\"ipass\"><br><input type=\"submit\" value=\"Submit\"></form></body></html>";
+
+const char optionTemplate[] = "<option value=\"%s\">%s</option>";
 
 /* Our URI handler function to be called during GET /uri request */
 esp_err_t get_handler(httpd_req_t *req)
 {
     /* Send a simple response */
-    // read the results.html file and send it as a response
+    // read the results.html file and send it as a response 
         
     httpd_resp_send(req, indexPage, HTTPD_RESP_USE_STRLEN);  // TODO: Trimitere sir de caractere ce contine pagina web prezentata in laborator (lista populata cu rezultatele scanarii)
     return ESP_OK;
@@ -78,8 +83,9 @@ httpd_uri_t uri_post = {
 };
 
 /* Function for starting the webserver */
-httpd_handle_t start_webserver(void)
+httpd_handle_t start_webserver()
 {
+
     /* Generate default configuration */
     httpd_config_t config = HTTPD_DEFAULT_CONFIG();
 
