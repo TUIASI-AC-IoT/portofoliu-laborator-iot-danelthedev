@@ -1,0 +1,42 @@
+simplicity_sdk_2024.12.2/protocol/bluetooth/src/sl_bt_stack_init.o: \
+ ../simplicity_sdk_2024.12.2/protocol/bluetooth/src/sl_bt_stack_init.c \
+ C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\platform\common\toolchain\inc/sl_gcc_preinclude.h \
+ C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\autogen/sl_component_catalog.h \
+ C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\platform\common\inc/sl_status.h \
+ C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\protocol\bluetooth\inc/sl_bt_api.h \
+ C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\protocol\bluetooth\inc/sl_bgapi.h \
+ C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\protocol\bluetooth\inc/sl_bt_api_compatibility.h \
+ C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\protocol\bluetooth\inc/sl_bt_stack_config.h \
+ C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\protocol\bluetooth\inc/sl_bt_ll_config.h \
+ C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\platform\common\inc/sl_common.h \
+ C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\platform\common\inc/sl_assert.h \
+ C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\platform\CMSIS\Core\Include/cmsis_compiler.h \
+ C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\platform\CMSIS\Core\Include/cmsis_gcc.h \
+ C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\protocol\bluetooth\inc/sl_bt_stack_init.h \
+ C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\config/sl_bluetooth_config.h \
+ C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\config/sl_bluetooth_connection_config.h \
+ C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\config/sl_bluetooth_advertiser_config.h \
+ C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\protocol\bluetooth\bgstack\ll\inc/sl_btctrl_linklayer.h \
+ C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\protocol\bluetooth\inc/sli_bt_gattdb_def.h \
+ C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\protocol\bluetooth\inc/sli_bt_config_defs.h \
+ C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\protocol\bluetooth\inc/sl_bt_ll_config.h
+C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\platform\common\toolchain\inc/sl_gcc_preinclude.h:
+C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\autogen/sl_component_catalog.h:
+C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\platform\common\inc/sl_status.h:
+C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\protocol\bluetooth\inc/sl_bt_api.h:
+C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\protocol\bluetooth\inc/sl_bgapi.h:
+C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\protocol\bluetooth\inc/sl_bt_api_compatibility.h:
+C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\protocol\bluetooth\inc/sl_bt_stack_config.h:
+C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\protocol\bluetooth\inc/sl_bt_ll_config.h:
+C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\platform\common\inc/sl_common.h:
+C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\platform\common\inc/sl_assert.h:
+C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\platform\CMSIS\Core\Include/cmsis_compiler.h:
+C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\platform\CMSIS\Core\Include/cmsis_gcc.h:
+C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\protocol\bluetooth\inc/sl_bt_stack_init.h:
+C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\config/sl_bluetooth_config.h:
+C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\config/sl_bluetooth_connection_config.h:
+C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\config/sl_bluetooth_advertiser_config.h:
+C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\protocol\bluetooth\bgstack\ll\inc/sl_btctrl_linklayer.h:
+C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\protocol\bluetooth\inc/sli_bt_gattdb_def.h:
+C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\protocol\bluetooth\inc/sli_bt_config_defs.h:
+C:\Users\cezar\SimplicityStudio\v5_workspace\lab8\simplicity_sdk_2024.12.2\protocol\bluetooth\inc/sl_bt_ll_config.h:
