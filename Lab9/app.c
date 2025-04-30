@@ -34,7 +34,10 @@
 
 #include "em_cmu.h"
 #include "em_gpio.h"
-
+#include "gatt_db.h"
+#define gattdb_LED_IO 27
+#define gattdb_BUTTON_IO 29
+static bool button_io_notification_enabled = false;
 // The advertising set handle allocated from Bluetooth stack.
 static uint8_t advertising_set_handle = 0xff;
 
@@ -43,6 +46,16 @@ void GPIO_ODD_IRQHandler(void)
   // Stergere flag intrerupere
   uint32_t interruptMask = GPIO_IntGet();
   GPIO_IntClear(interruptMask);
+
+  uint8_t button_state = GPIO_PinInGet(gpioPortC, 7) ? 1 : 0;
+
+    // Update GATT attribute value
+    sl_bt_gatt_server_write_attribute_value(gattdb_BUTTON_IO, 0, sizeof(button_state), &button_state);
+
+    // Notify client if enabled
+    if (button_io_notification_enabled) {
+      sl_bt_gatt_server_notify_all(gattdb_BUTTON_IO, sizeof(button_state), &button_state);
+    }
 }
 
 /**************************************************************************//**
@@ -141,6 +154,30 @@ void sl_bt_on_event(sl_bt_msg_t *evt)
     ///////////////////////////////////////////////////////////////////////////
     // Add additional event handlers here as your application requires!      //
     ///////////////////////////////////////////////////////////////////////////
+    case sl_bt_evt_gatt_server_attribute_value_id:
+      if (gattdb_LED_IO == evt->data.evt_gatt_server_attribute_value.attribute) {
+        uint8_t recv_val;
+        size_t recv_len;
+        sl_bt_gatt_server_read_attribute_value(gattdb_LED_IO, 0, sizeof(recv_val), &recv_len, &recv_val);
+        GPIO_PinOutSet(gpioPortA, 4);
+        if (recv_val == 0) {
+          GPIO_PinOutClear(gpioPortA, 4);
+        }
+        app_log("LED = %d\r\n", recv_val);
+      }
+      break;
+
+    case sl_bt_evt_gatt_server_characteristic_status_id:
+      if (gattdb_BUTTON_IO == evt->data.evt_gatt_server_characteristic_status.characteristic) {
+        if (evt->data.evt_gatt_server_characteristic_status.client_config_flags & sl_bt_gatt_notification) {
+          app_log("Notificare activata pentru caracteristica BUTTON\r\n");
+          button_io_notification_enabled = true;
+        } else {
+          app_log("Notificare dezactivata pentru caracteristica BUTTON\r\n");
+          button_io_notification_enabled = false;
+        }
+      }
+      break;
 
     // -------------------------------
     // Default event handler.

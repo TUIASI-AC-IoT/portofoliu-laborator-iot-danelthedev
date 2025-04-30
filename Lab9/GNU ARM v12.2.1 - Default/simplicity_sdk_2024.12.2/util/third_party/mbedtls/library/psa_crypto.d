@@ -1,0 +1,342 @@
+simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto.o: \
+ ../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto.c \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/common/toolchain/inc/sl_gcc_preinclude.h \
+ ../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/common.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/build_info.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/config/sl_mbedtls_config.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/autogen/sli_mbedtls_config_autogen.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/security/sl_component/sl_mbedtls_support/config/sli_mbedtls_omnipresent.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/autogen/sl_component_catalog.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/em_device.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm220pc22hna.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/CMSIS/Core/Include/core_cm33.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/CMSIS/Core/Include/cmsis_version.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/CMSIS/Core/Include/cmsis_compiler.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/CMSIS/Core/Include/cmsis_gcc.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/service/interrupt_manager/inc/arm/cmsis_nvic_virtual.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/service/interrupt_manager/inc/sl_interrupt_manager.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/common/inc/sl_core.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/common/inc/sl_code_classification.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/common/inc/sli_code_classification.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/common/inc/sl_status.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/CMSIS/Core/Include/mpu_armv8.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/system_bgm22.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/common/inc/sl_code_classification.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_emu.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_cmu.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_hfxo.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_hfrco.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_fsrco.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_dpll.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_lfxo.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_lfrco.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_ulfrco.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_msc.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_icache.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_prs.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_gpio.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_gpio_port.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_ldma.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_ldmaxbar.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_timer.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_usart.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_burtc.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_i2c.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_syscfg.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_buram.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_gpcrc.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_dcdc.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_pdm.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_aes.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_smu.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_rtcc.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_letimer.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_iadc.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_wdog.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_eusart.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_cryptoacc.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_devinfo.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_prs_signals.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_dma_descriptor.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_ldmaxbar_defines.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/security/sl_component/sl_mbedtls_support/config/sli_mbedtls_acceleration.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/config/sl_mbedtls_device_config.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/autogen/sli_mbedtls_config_transform_autogen.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/config/psa_crypto_config.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/autogen/sli_psa_config_autogen.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/security/sl_component/sl_mbedtls_support/config/sli_psa_acceleration.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/autogen/sli_psa_builtin_config_autogen.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/config_psa.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_legacy.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_adjust_config_synonyms.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_adjust_config_dependencies.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/config_adjust_psa_superset_legacy.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_adjust_config_key_pair_types.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/config_adjust_legacy_from_psa.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_adjust_auto_enabled.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/config_adjust_legacy_crypto.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/config_adjust_x509.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/config_adjust_ssl.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/check_config.h \
+ ../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/alignment.h \
+ ../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_core_common.h \
+ ../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/check_crypto_config.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_platform.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/private_access.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/build_info.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_types.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_values.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_sizes.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_struct.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_driver_contexts_primitives.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_driver_common.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_sizes.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_builtin_primitives.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/md5.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/ripemd160.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/sha1.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/security/sl_component/sl_mbedtls_support/inc/sha1_alt.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/security/sl_component/sl_psa_driver/inc/sli_cryptoacc_transparent_types.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/crypto_ip/libcryptosoc/include/sx_hash.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/crypto_ip/libcryptosoc/include/compiler_extentions.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/crypto_ip/libcryptosoc/include/cryptolib_types.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/crypto_ip/libcryptosoc/include/sx_aes.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/crypto_ip/libcryptosoc/include/sx_blk_cipher_common.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/common/inc/sl_enum.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/sha256.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/security/sl_component/sl_mbedtls_support/inc/sha256_alt.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/sha512.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/sha3.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/cipher.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/platform_util.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/security/sl_component/sl_psa_driver/inc/sli_psa_driver_features.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_driver_contexts_composites.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_builtin_composites.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/cmac.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/security/sl_component/sl_mbedtls_support/inc/cmac_alt.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/chachapoly.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/poly1305.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/chacha20.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/ecdsa.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/ecp.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/bignum.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/md.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/ecjpake.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_driver_contexts_key_derivation.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_builtin_key_derivation.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_extra.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_compat.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_values.h \
+ ../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_cipher.h \
+ ../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_core.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_se_driver.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_driver_common.h \
+ ../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_invasive.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/entropy.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/md.h \
+ ../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_driver_wrappers.h \
+ ../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_aead.h \
+ ../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_driver_wrappers_no_static.h \
+ ../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_hash.h \
+ ../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_mac.h \
+ ../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_pake.h \
+ ../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_rsa.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/rsa.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/platform.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/constant_time.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/security/sl_component/sl_psa_driver/inc/sli_cryptoacc_transparent_functions.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/security/sl_component/sl_psa_driver/inc/sli_cryptoacc_transparent_types.h \
+ ../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_ecp.h \
+ ../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_ffdh.h \
+ ../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_slot_management.h \
+ ../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_se.h \
+ ../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_storage.h \
+ ../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_random_impl.h \
+ ../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_util_internal.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/psa_util.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/asn1write.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/asn1.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/aes.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/security/sl_component/sl_mbedtls_support/inc/aes_alt.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/camellia.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/ccm.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/des.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/ecdh.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/error.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/gcm.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/security/sl_component/sl_mbedtls_support/inc/gcm_alt.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/pk.h \
+ ../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/pk_wrap.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/threading.h \
+ /home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/security/sl_component/sl_mbedtls_support/inc/sli_psa_crypto.h
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/common/toolchain/inc/sl_gcc_preinclude.h:
+../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/common.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/build_info.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/config/sl_mbedtls_config.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/autogen/sli_mbedtls_config_autogen.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/security/sl_component/sl_mbedtls_support/config/sli_mbedtls_omnipresent.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/autogen/sl_component_catalog.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/em_device.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm220pc22hna.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/CMSIS/Core/Include/core_cm33.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/CMSIS/Core/Include/cmsis_version.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/CMSIS/Core/Include/cmsis_compiler.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/CMSIS/Core/Include/cmsis_gcc.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/service/interrupt_manager/inc/arm/cmsis_nvic_virtual.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/service/interrupt_manager/inc/sl_interrupt_manager.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/common/inc/sl_core.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/common/inc/sl_code_classification.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/common/inc/sli_code_classification.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/common/inc/sl_status.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/CMSIS/Core/Include/mpu_armv8.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/system_bgm22.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/common/inc/sl_code_classification.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_emu.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_cmu.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_hfxo.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_hfrco.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_fsrco.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_dpll.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_lfxo.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_lfrco.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_ulfrco.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_msc.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_icache.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_prs.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_gpio.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_gpio_port.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_ldma.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_ldmaxbar.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_timer.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_usart.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_burtc.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_i2c.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_syscfg.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_buram.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_gpcrc.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_dcdc.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_pdm.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_aes.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_smu.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_rtcc.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_letimer.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_iadc.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_wdog.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_eusart.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_cryptoacc.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_devinfo.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_prs_signals.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_dma_descriptor.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/Device/SiliconLabs/BGM22/Include/bgm22_ldmaxbar_defines.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/security/sl_component/sl_mbedtls_support/config/sli_mbedtls_acceleration.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/config/sl_mbedtls_device_config.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/autogen/sli_mbedtls_config_transform_autogen.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/config/psa_crypto_config.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/autogen/sli_psa_config_autogen.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/security/sl_component/sl_mbedtls_support/config/sli_psa_acceleration.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/autogen/sli_psa_builtin_config_autogen.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/config_psa.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_legacy.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_adjust_config_synonyms.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_adjust_config_dependencies.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/config_adjust_psa_superset_legacy.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_adjust_config_key_pair_types.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/config_adjust_legacy_from_psa.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_adjust_auto_enabled.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/config_adjust_legacy_crypto.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/config_adjust_x509.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/config_adjust_ssl.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/check_config.h:
+../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/alignment.h:
+../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_core_common.h:
+../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/check_crypto_config.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_platform.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/private_access.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/build_info.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_types.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_values.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_sizes.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_struct.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_driver_contexts_primitives.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_driver_common.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_sizes.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_builtin_primitives.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/md5.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/ripemd160.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/sha1.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/security/sl_component/sl_mbedtls_support/inc/sha1_alt.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/security/sl_component/sl_psa_driver/inc/sli_cryptoacc_transparent_types.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/crypto_ip/libcryptosoc/include/sx_hash.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/crypto_ip/libcryptosoc/include/compiler_extentions.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/crypto_ip/libcryptosoc/include/cryptolib_types.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/crypto_ip/libcryptosoc/include/sx_aes.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/crypto_ip/libcryptosoc/include/sx_blk_cipher_common.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/common/inc/sl_enum.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/sha256.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/security/sl_component/sl_mbedtls_support/inc/sha256_alt.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/sha512.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/sha3.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/cipher.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/platform_util.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/security/sl_component/sl_psa_driver/inc/sli_psa_driver_features.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_driver_contexts_composites.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_builtin_composites.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/cmac.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/security/sl_component/sl_mbedtls_support/inc/cmac_alt.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/chachapoly.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/poly1305.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/chacha20.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/ecdsa.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/ecp.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/bignum.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/md.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/ecjpake.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_driver_contexts_key_derivation.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_builtin_key_derivation.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_extra.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_compat.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_values.h:
+../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_cipher.h:
+../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_core.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_se_driver.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/psa/crypto_driver_common.h:
+../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_invasive.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/entropy.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/md.h:
+../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_driver_wrappers.h:
+../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_aead.h:
+../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_driver_wrappers_no_static.h:
+../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_hash.h:
+../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_mac.h:
+../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_pake.h:
+../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_rsa.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/rsa.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/platform.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/constant_time.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/security/sl_component/sl_psa_driver/inc/sli_cryptoacc_transparent_functions.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/security/sl_component/sl_psa_driver/inc/sli_cryptoacc_transparent_types.h:
+../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_ecp.h:
+../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_ffdh.h:
+../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_slot_management.h:
+../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_se.h:
+../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_storage.h:
+../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_crypto_random_impl.h:
+../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/psa_util_internal.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/psa_util.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/asn1write.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/asn1.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/aes.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/security/sl_component/sl_mbedtls_support/inc/aes_alt.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/camellia.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/ccm.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/des.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/ecdh.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/error.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/gcm.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/security/sl_component/sl_mbedtls_support/inc/gcm_alt.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/pk.h:
+../simplicity_sdk_2024.12.2/util/third_party/mbedtls/library/pk_wrap.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/util/third_party/mbedtls/include/mbedtls/threading.h:
+/home/danel/Facultate/An1/Sem2/IOT/Lab9/simplicity_sdk_2024.12.2/platform/security/sl_component/sl_mbedtls_support/inc/sli_psa_crypto.h:

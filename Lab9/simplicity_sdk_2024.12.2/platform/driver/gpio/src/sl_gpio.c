@@ -811,14 +811,14 @@ void GPIO_EVEN_IRQHandler(void)
  *   GPIO ODD interrupt handler. Interrupt handler clears all IF odd flags and
  *   call the dispatcher passing the flags which triggered the interrupt.
  ******************************************************************************/
-void GPIO_ODD_IRQHandler(void)
-{
-  uint32_t odd_flags;
-
-  // Gets all enabled and pending odd interrupts.
-  odd_flags = sl_hal_gpio_get_enabled_pending_interrupts() & SL_HAL_GPIO_INT_IF_ODD_MASK;
-  // Clears only odd interrupts.
-  sl_hal_gpio_clear_interrupts(odd_flags);
-
-  sl_gpio_dispatch_interrupt(odd_flags);
-}
+//void GPIO_ODD_IRQHandler(void)
+//{
+//  uint32_t odd_flags;
+//
+//  // Gets all enabled and pending odd interrupts.
+//  odd_flags = sl_hal_gpio_get_enabled_pending_interrupts() & SL_HAL_GPIO_INT_IF_ODD_MASK;
+//  // Clears only odd interrupts.
+//  sl_hal_gpio_clear_interrupts(odd_flags);
+//
+//  sl_gpio_dispatch_interrupt(odd_flags);
+//}
